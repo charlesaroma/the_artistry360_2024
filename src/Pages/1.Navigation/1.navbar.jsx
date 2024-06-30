@@ -28,8 +28,7 @@ const MenuItemData = [
 
 const NavMenu = () => {
   return (
-    <div className='relative w-full h-full'>
-      <nav className="w-full h-[85px] hidden absolute z-[10] top-0 lg:flex items-center justify-between px-2 lg:px-[5%]">
+      <nav className="w-full h-[85px] hidden fixed z-[10] top-0 lg:flex items-center justify-between px-2 lg:px-[5%]">
         {/** logo */}
           <div>
             <Link to="/" className='flex items-center'>
@@ -62,7 +61,6 @@ const NavMenu = () => {
           </ul>
         </div>
     </nav>
-    </div>
 
   );
 };

@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className='w-full h-[80vh] xl:h-screen'>
+    <div className='w-full h-[80vh] lg:h-screen'>
       {/* Background Video */}
       <div className="relative h-screen">
         <video
@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-[-1]"></div>
 
         {/* Text & Buttons */}
-        <div className='w-full min-h-screen h-full  xl:h-screen flex flex-col items-center justify-center space-y-5'>
+        <div className='w-full min-h-screen h-full  lg:h-screen flex flex-col items-center justify-center space-y-5'>
           {/* Main Text */}
           <h1 className='text-3xl md:text-6xl text-[#F2F2F2] text-center font-extrabold'>
             Strong, Bold & Confident
