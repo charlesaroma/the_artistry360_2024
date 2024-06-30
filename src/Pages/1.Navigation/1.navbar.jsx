@@ -1,6 +1,7 @@
 // src/components/NavMenu.jsx
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import Logo from '../../assets/Images/Logo.png'
 
 const MenuItemData = [
   {
@@ -27,25 +28,42 @@ const MenuItemData = [
 
 const NavMenu = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white bg-opacity-10 backdrop-blur-md p-4 rounded-lg shadow-lg z-50">
-      <ul className="flex items-center justify-center space-x-4 list-none">
-        {MenuItemData.map((item, index) => (
-          <li key={index}>
-            <NavLink
-              to={item.path}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-white font-bold"
-                  : "text-gray-300 hover:text-white"
-              }
-              style={{ textDecoration: 'none' }}
-            >
-              {item.title}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
+    <div className='relative w-full h-full'>
+      <nav className="w-full h-[85px] hidden absolute z-[10] top-0 lg:flex items-center justify-between px-2 lg:px-[5%]">
+        {/** logo */}
+          <div>
+            <Link to="/" className='flex items-center'>
+              <img
+                src={Logo}
+                className=" w-auto h-[40px]  navbar-brand cursor-pointer"
+                alt="logo"
+              />
+            </Link>
+          </div>
+
+        {/** menu items */}
+        <div className="h-full">
+          <ul className="w-full h-full flex justify-center items-center space-x-2 text-xs md:text-xs xl:text-base uppercase font-bold leading-19.36 text-[#F2F2F2]">
+            {MenuItemData.map((item, index) => (
+              <li key={index}>
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "border-b-[#f67d12] text border-b-2 cursor-pointer  py-4 px-3"
+                      : "border-b-2 border-b-transparent cursor-pointer py-4 px-3 hover:border-b-[#f67d12]"
+                  }
+                  style={{ textDecoration: 'none' }}
+                >
+                  {item.title}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
     </nav>
+    </div>
+
   );
 };
 

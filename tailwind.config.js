@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        'quicksand': ['Quicksand', 'sans-serif'],
         sans: ['Roboto', 'sans-serif'],
         serif: ['Open Sans', 'serif'],
       },

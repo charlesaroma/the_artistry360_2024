@@ -3,7 +3,7 @@ import Hero from './2.Hero.jsx'
 
 const HomePage = () => {
   return (
-    <div className='w-full h-full overflow-x-hidden'>
+    <div className='relative w-full h-full overflow-x-hidden'>
       {/* Navigation Bar */}
       <NavBar />
 
