@@ -1,5 +1,4 @@
 // src/components/NavMenu.jsx
-import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import Logo from '../../assets/Images/Logo.png'
 
@@ -32,7 +31,7 @@ const MenuItemData = [
 
 const NavMenu = () => {
   return (
-      <nav className="w-full h-[85px] hidden fixed z-[10] top-0 lg:flex items-center justify-between px-2 lg:px-[5%]">
+      <nav className="w-full h-[13vh] bg-opacity-40 bg-black backdrop-blur-md hidden fixed z-[10] top-0 lg:flex items-center justify-between px-2 lg:px-[5%]">
         {/** logo */}
           <div>
             <Link to="/" className='flex items-center'>

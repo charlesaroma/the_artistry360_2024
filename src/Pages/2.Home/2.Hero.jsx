@@ -1,4 +1,4 @@
-import React from 'react';
+
 import BgVideo from '../../assets/videos/SonyCam.mp4'
 import { ReactTyped } from "react-typed";
 import { NavLink } from 'react-router-dom';
@@ -51,10 +51,11 @@ const Hero = () => {
             {/* About Us Link */}
             <NavLink
               to="/about"
-              className="w-36 px-6 py-2 bg-transparent text-center text-[#f2f2f2] font-semibold border border-[#f2f2f2] hover:bg-[#f2f2f2] hover:text-black transition duration-300"
+              className="w-36 px-6 py-2 bg-transparent text-center text-[#f2f2f2] font-semibold border border-[#f2f2f2] hover:bg-[#f2f2f2] hover:text-[#f67d12] transition duration-300"
             >
               About Us
             </NavLink>
+
             {/* Gallery Link */}
             <NavLink
               to="/gallery"
