@@ -57,8 +57,8 @@ const SliderSection = () => {
 
   return (
     <div className='w-full h-full lg:h-screen flex flex-col bg-[#000000] px-[5%]'>
-      <div className='w-full h-full flex flex-col md:flex-row items-center justify-center my-10'>
-        <div className='md:max-w-[25%] h-full flex flex-col justify-center gap-2'>
+      <div className='w-full h-full flex flex-col lg:flex-row items-center justify-center my-10'>
+        <div className='md:max-w-[30%] h-full flex flex-col justify-center gap-2'>
           {/* Main Title */}
           <h2 className='text-[#F2F2F2] text-4xl font-bold pb-5'>
             Transforming Aspiring Actors into Professionals.
@@ -74,7 +74,7 @@ const SliderSection = () => {
         </div>
 
         {/* Image Slider */}
-        <Slider {...settings} className='md:max-w-[750px] w-full mt-10'>
+        <Slider {...settings} className='md:max-w-[650px] w-full mt-10'>
           {images.map((image) => (
             <div key={image.id} className='p-2'>
               <img src={image.imageUrl} alt={image.title} className="rounded-3xl w-full max-h-[370px] object-cover"/>

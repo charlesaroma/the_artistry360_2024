@@ -25,7 +25,7 @@ const Hero = () => {
         {/* Text & Buttons */}
         <div className='w-full min-h-screen h-full  lg:h-screen flex flex-col items-center justify-center space-y-5'>
           {/* Main Text */}
-          <h1 className='text-3xl md:text-6xl text-[#F2F2F2] text-center font-extrabold'>
+          <h1 className='text-3xl lg:text-6xl text-[#F2F2F2] text-center font-extrabold'>
             Strong, Bold & Confident
           </h1>
 
