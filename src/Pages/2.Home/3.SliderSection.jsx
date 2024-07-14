@@ -76,7 +76,7 @@ const SliderSection = () => {
         {/* Image Slider */}
         <Slider {...settings} className='md:max-w-[650px] w-full mt-10'>
           {images.map((image) => (
-            <div key={image.id} className='p-2'>
+            <div key={image.id} className='outline-none p-2'>
               <img src={image.imageUrl} alt={image.title} className="rounded-3xl w-full max-h-[370px] object-cover"/>
               <span className="text-base font-semibold justify-center flex text-center text-[#F2F2F2] italic mt-2">
                 {image.title}

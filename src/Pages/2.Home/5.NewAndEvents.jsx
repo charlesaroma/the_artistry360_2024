@@ -38,7 +38,7 @@ const NewAndEvents = () => {
     {
       id: 4,
       image: sesseIslands,
-      title: "Sesse Islands - Actor's Camp",
+      title: "Sesse Islands - Actors Camp",
       date: "September 6-9, 2024",
       description:
         "Join us for an immersive 4-day actor's camp on the beautiful Sesse Islands. This retreat will focus on honing performance skills in a tranquil, inspiring setting.",
@@ -63,7 +63,7 @@ const NewAndEvents = () => {
 
   return (
     <div
-      className="w-full h-full bg-cover bg-center bg-no-repeat"
+      className="w-full h-full bg-cover bg-fixed bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Overlay to darken the background image for better text readability */}
@@ -100,7 +100,7 @@ const NewAndEvents = () => {
           {/* Events Section */}
           <div className="container mx-auto mt-14">
             {/* Section title */}
-            <h2 className="text-3xl font-bold mb-8 text-center text-[#f67d12]">
+            <h2 className="text-3xl font-bold mb-8 text-center uppercase text-[#f67d12]">
               On Going & Out Going Events
             </h2>
             <div className="flex flex-wrap justify-center -mx-4">
@@ -110,7 +110,7 @@ const NewAndEvents = () => {
                   key={event.id}
                   className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8"
                 >
-                  <div className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-md rounded-xl overflow-hidden shadow-md h-full flex flex-col transform transition-transform duration-300 hover:border border-[#f67d12]">
+                  <div className="bg-black bg-opacity-10 backdrop-filter backdrop-blur-md rounded-xl overflow-hidden shadow-md h-full flex flex-col transform transition-transform duration-300 ">
                     {/* Event image */}
                     <img
                       src={event.image}
@@ -119,7 +119,7 @@ const NewAndEvents = () => {
                     />
                     {/* Event content */}
                     <div className="p-6 flex-grow text-[#F2F2F2]">
-                      <h3 className="text-xl font-bold mb-2">{event.title.replace("'", "&apos;")}</h3>
+                      <h3 className="text-xl font-bold mb-2">{event.title}</h3>
                       <p className="text-gray-300 mb-4">{event.date}</p>
                       <p>{event.description}</p>
                     </div>
@@ -134,7 +134,7 @@ const NewAndEvents = () => {
               </h3>
               <ul className="list-disc pl-6 text-[#F2F2F2]">
                 <li>Registration for new acting intake</li>
-                <li>Actor's profiling at The Artistry360</li>
+                <li>Actors profiling at The Artistry360</li>
               </ul>
             </div>
           </div>

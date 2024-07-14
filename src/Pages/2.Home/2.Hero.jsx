@@ -1,8 +1,7 @@
-
-import BgVideo from '../../assets/videos/SonyCam.mp4'
+import BgVideo from '../../assets/videos/SonyCam.mp4';
 import { ReactTyped } from "react-typed";
+import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
-
 
 const Hero = () => {
   return (
@@ -49,12 +48,14 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex space-x-4 mt-5">
             {/* About Us Link */}
-            <NavLink
-              to="/about"
-              className="w-36 px-6 py-2 bg-transparent text-center text-[#f2f2f2] font-semibold border border-[#f2f2f2] hover:bg-[#f2f2f2] hover:text-[#f67d12] transition duration-300"
+            <Link
+              to="slider-section"
+              smooth={true}
+              duration={500}
+              className="w-36 px-6 py-2 bg-transparent text-center text-[#f2f2f2] font-semibold border border-[#f2f2f2] hover:bg-[#f2f2f2] hover:text-[#f67d12] transition duration-300 cursor-pointer"
             >
               About Us
-            </NavLink>
+            </Link>
 
             {/* Gallery Link */}
             <NavLink
@@ -64,12 +65,10 @@ const Hero = () => {
               Gallery
             </NavLink>
           </div>
-
-
         </div>
       </div>
     </div>
   )
 }
 
-export default Hero
+export default Hero;
