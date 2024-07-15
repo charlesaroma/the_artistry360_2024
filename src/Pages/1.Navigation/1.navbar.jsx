@@ -42,7 +42,7 @@ const NavMenu = () => {
 
         {/** menu items */}
         <div className="h-full">
-          <ul className="w-full h-full flex justify-center items-center space-x-2 text-xs md:text-xs xl:text-base uppercase font-semiboldbold leading-19.36 text-[#F2F2F2]">
+          <ul className="w-full h-full flex justify-center items-center space-x-2 text-xs md:text-xs xl:text-base font-semiboldbold leading-19.36 text-[#F2F2F2]">
             {MenuItemData.map((item, index) => (
               <li key={index}>
                 <NavLink

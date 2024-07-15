@@ -108,7 +108,7 @@ const NewAndEvents = () => {
                 // Event card container
                 <div
                   key={event.id}
-                  className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8"
+                  className="w-full md:w-1/2 lg:w-1/3 px-4 lg:px-0 mx-2 mb-8"
                 >
                   <div className="bg-black bg-opacity-10 backdrop-filter backdrop-blur-md rounded-xl overflow-hidden shadow-md h-full flex flex-col transform transition-transform duration-300 ">
                     {/* Event image */}

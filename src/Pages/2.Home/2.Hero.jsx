@@ -32,7 +32,7 @@ const Hero = () => {
           <h2 className="w-full font-semibold text-[#f67d12] text-xl md:text-3xl text-center ">
             <ReactTyped
               strings={[
-                'Find Your Spotlight Moments With Us',
+                'Find Your Spotlight Moments With Us.',
                 'Unlock Your Potential.',
                 'Discover Your Strength.',
                 'Transform Your Talent.',
